@@ -1,0 +1,75 @@
+POST {{host}}/admin/setRole
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZGF0b0BnbWFpbC5jb20iLCJzdWIiOiJkYXRvQGdtYWlsLmNvbSIsImlhdCI6MTYxNDkzMzI2NiwiZXhwIjoxNjE0OTM2ODY2fQ.QxvxfL3Fyt0npKI89qpdsSiSRoYKCfqQnEmpVgx0_9U
+
+{
+  "adminPassword": "goga1234",
+  "meil": "dato@gmail.com"
+}
+
+###
+POST {{host}}/admin/users/list
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+
+###
+POST {{host}}/admin/add/Lecture
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+
+
+{
+"time": "12:00",
+  "lecturename": "math",
+  "roomname": "room2"
+}
+
+
+
+###
+POST{{host}}/admin/add/room/room2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+
+###
+POST {{host}}/admin/lecture/add/student
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+
+{
+  "gmail": "goga@gmail.com",
+   "subject": "Algebra"
+}
+
+###
+POST {{host}}/admin/lectures
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+
+###
+POST {{host}}/admin/lecture/change/2021-10-30T19:40:50.63/math
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+
+
+###
+DELETE {{host}}/admin/delete/lecture/OOP
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTExNzI5OSwiZXhwIjoxNjE1MTIwODk5fQ.lGX1GTQYvSDsQ8YnB-_dfOUE6kKFGcahr_ybLHi56ZA
+
+
+
+###
+POST {{host}}/admin/room/list
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE4ODg4NSwiZXhwIjoxNjE1MTkyNDg1fQ.Tm3Ds7tKAwOSbPHun6UZQCotK7QUJjBdZ7WBYZ8b8Pw
+
+###
+DELETE {{host}}/admin/room/delete/403B
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTEyMTI0OSwiZXhwIjoxNjE1MTI0ODQ5fQ.wjWxNMsJv5uXDsXPKWSGFG2yz9oRfbCwOLAFVEBEvcI
+
+###
+POST {{host}}/admin/admins/list
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTI3NTU2NCwiZXhwIjoxNjE1Mjc5MTY0fQ.RepIKLd0eL9xCNOHMm4f_-GW9E878AAb0A4UH-v8e8E

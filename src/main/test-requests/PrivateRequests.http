@@ -1,0 +1,34 @@
+POST {{host}}/user/private/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTI4OTc0OSwiZXhwIjoxNjE1MjkzMzQ5fQ.fQPuQGSi2QtzL6CnJsCOck43iiRaTIsmXXnQKWcUh2Q
+
+###
+
+DELETE {{host}}/user/private/deleteAccount
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZGF0b0BnbWFpbC5jb20iLCJzdWIiOiJkYXRvQGdtYWlsLmNvbSIsImlhdCI6MTYxNDk1MDQyOCwiZXhwIjoxNjE0OTU0MDI4fQ.Urv0wPy-0cSYhXd28wgsdC4UMLlx4p1e_rhAtLrGfS8
+
+{
+  "password": "goga1234"
+}
+
+
+###
+PUT {{host}}/user/private/changeInfo
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNDg1MzE2NywiZXhwIjoxNjE0ODU2NzY3fQ.WRnxIOUe0icln5x5RmXT_K1iRUIBRNMicYGetx4X9SY
+
+{
+  "oldpassword": "goga1234",
+  "newPassword": "goga123",
+  "renewPassword": "goga123",
+  "newemail": "gog@gmail.com"
+
+}
+
+
+###
+POST {{host}}/user/private/lecture/notification
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZGF0b0BnbWFpbC5jb20iLCJzdWIiOiJkYXRvQGdtYWlsLmNvbSIsImlhdCI6MTYxNTExNTgwMSwiZXhwIjoxNjE1MTE5NDAxfQ.0pf4SPhF27vhzCvC0AKdhLWMmfkXx1JBtua4ggo87GU
+
