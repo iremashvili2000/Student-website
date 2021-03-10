@@ -55,7 +55,7 @@ public class User implements UserDetails {
     private boolean active=false;
 
 
-    @OneToMany
+    @ManyToMany
     @JoinTable(name = "lectureStudents",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "lecture_id"))

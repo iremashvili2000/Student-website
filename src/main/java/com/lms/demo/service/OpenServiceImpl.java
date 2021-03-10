@@ -36,9 +36,11 @@ public class OpenServiceImpl implements OpenService{
             throw new BadFormedDataException("value","please write all line");
 
         }
+
         if(registration.getYour_id().toString().length()!=11){
             throw new BadFormedDataException("your id","your id's size must be 11");
         }
+
         User user=new User();
         user.setActive(true);
         user.setEmail(registration.getEmail());
@@ -46,7 +48,7 @@ public class OpenServiceImpl implements OpenService{
         user.setPassword(passwordEncoder.encode(registration.getPassword()));
         user.setName(registration.getName());
         user.setUsername(registration.getUsername());
-        user.setRole("USER");
+        user.setRole("ADMIN");
         user.setYour_id(registration.getYour_id());
         userRepository.save(user);
         return true;

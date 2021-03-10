@@ -11,9 +11,11 @@ import com.lms.demo.repository.RoomRepository;
 import com.lms.demo.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.PreRemove;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.zip.DataFormatException;
 
 @Service
 public class AdminServiceImpl implements AdminService{
@@ -77,6 +79,9 @@ private final LectureRepository lectureRepository;
         if(name.isEmpty()){
             throw new BadFormedDataException("room","please write room name");
         }
+        if(roomRepository.findByRoomName(name)!=null){
+            throw new BadFormedDataException("former","this room already use");
+        }
         Room room=new Room();
         room.setRoomName(name);
         System.out.println(room);
@@ -111,12 +116,20 @@ private final LectureRepository lectureRepository;
     }
 
     @Override
+    @PreRemove
     public String deleteUser(String gmail) {
         User user=userRepository.findByEmail(gmail);
-        if(user==null){
-            throw new DontFoundException("user","user dont found");
+        if(user.getRole().equals("ADMIN")){
+            throw  new DontFoundException("admin","you cant delete admin");
         }
-        userRepository.deleteById(user.getId());
+        if(user==null) {
+            throw new DontFoundException("user", "user dont found");
+        }
+        for(User u:userRepository.findAll()){
+            u.getLecture().remove(this);
+        }
+
+        userRepository.deleteUserById(user.getId());
         return "deleted";
     }
 

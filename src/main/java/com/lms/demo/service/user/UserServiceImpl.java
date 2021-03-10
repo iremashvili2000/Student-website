@@ -21,6 +21,7 @@ public class UserServiceImpl implements UserService{
     private final UserRepository userRepository;
     private final LectureRepository lectureRepository;
 
+
     public UserServiceImpl(UserRepository userRepository, LectureRepository lectureRepository) {
         this.userRepository = userRepository;
 
@@ -49,6 +50,10 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public void deleteMe(User user) {
+        for(User u:userRepository.findAll()){
+            u.getLecture().remove(this);
+        }
+
         userRepository.deleteById(user.getId());
     }
 

@@ -1,6 +1,6 @@
 POST {{host}}/admin/setRole
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZGF0b0BnbWFpbC5jb20iLCJzdWIiOiJkYXRvQGdtYWlsLmNvbSIsImlhdCI6MTYxNDkzMzI2NiwiZXhwIjoxNjE0OTM2ODY2fQ.QxvxfL3Fyt0npKI89qpdsSiSRoYKCfqQnEmpVgx0_9U
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM1ODY5NCwiZXhwIjoxNjE1MzYyMjk0fQ.N7d30DXS6sw9fZAwFws85GW8VxX9UiprUtVEVJZtjVE
 
 {
   "adminPassword": "goga1234",
@@ -10,66 +10,72 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZGF0b0BnbWFpbC5jb20iLCJzd
 ###
 POST {{host}}/admin/users/list
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM2MTUzMCwiZXhwIjoxNjE1MzY1MTMwfQ.SMaBkgJYx5_hE2g5L2p6-ysN4sFtigF4i_OpZmpdStk
+
 
 ###
 POST {{host}}/admin/add/Lecture
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM2OTcyMSwiZXhwIjoxNjE1MzczMzIxfQ.cvMUcHrSD8uvteYOKxdZqfFqRxBeJvQ3Vni3r2vEJYw
 
 {
 "time": "12:00",
-  "lecturename": "math",
-  "roomname": "room2"
+  "lecturename": "Algebra",
+  "roomname": "room1"
 }
 
 
 
 ###
-POST{{host}}/admin/add/room/room2
+POST{{host}}/admin/add/room/room1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM2OTcyMSwiZXhwIjoxNjE1MzczMzIxfQ.cvMUcHrSD8uvteYOKxdZqfFqRxBeJvQ3Vni3r2vEJYw
 
 ###
 POST {{host}}/admin/lecture/add/student
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM2OTcyMSwiZXhwIjoxNjE1MzczMzIxfQ.cvMUcHrSD8uvteYOKxdZqfFqRxBeJvQ3Vni3r2vEJYw
 
 {
-  "gmail": "goga@gmail.com",
+  "gmail": "dato@gmail.com",
    "subject": "Algebra"
 }
 
 ###
 POST {{host}}/admin/lectures
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZGF0b0BnbWFpbC5jb20iLCJzdWIiOiJkYXRvQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM3MDQ4MSwiZXhwIjoxNjE1Mzc0MDgxfQ.FQXyH3Ztl66Ls2TB3K_GP0reHNbJiPUiM4iRATnJCsY
 
 ###
-POST {{host}}/admin/lecture/change/2021-10-30T19:40:50.63/math
+POST {{host}}/admin/lecture/change/2022-10-30T19:40:50.63/Algebra
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE5NTc5OCwiZXhwIjoxNjE1MTk5Mzk4fQ.zPnRTabEppnam0hZCHMXeouBeSSx8XQ83c1MZTov50I
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM2MzU5MCwiZXhwIjoxNjE1MzY3MTkwfQ.JfOaduIIn1mlUyNu-vobgiMB24VpXLsoEH9dSez1RyQ
 
 
 ###
-DELETE {{host}}/admin/delete/lecture/OOP
+DELETE {{host}}/admin/delete/lecture/Algebra
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTExNzI5OSwiZXhwIjoxNjE1MTIwODk5fQ.lGX1GTQYvSDsQ8YnB-_dfOUE6kKFGcahr_ybLHi56ZA
-
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM2ODU4MSwiZXhwIjoxNjE1MzcyMTgxfQ.5sTpQNNI5zkGjGy6r_PjWY9keX6-liAGkNB4acBJ2Ug
 
 ###
 POST {{host}}/admin/room/list
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTE4ODg4NSwiZXhwIjoxNjE1MTkyNDg1fQ.Tm3Ds7tKAwOSbPHun6UZQCotK7QUJjBdZ7WBYZ8b8Pw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM2MzU5MCwiZXhwIjoxNjE1MzY3MTkwfQ.JfOaduIIn1mlUyNu-vobgiMB24VpXLsoEH9dSez1RyQ
+
 
 ###
-DELETE {{host}}/admin/room/delete/403B
+DELETE {{host}}/admin/room/delete/room1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTEyMTI0OSwiZXhwIjoxNjE1MTI0ODQ5fQ.wjWxNMsJv5uXDsXPKWSGFG2yz9oRfbCwOLAFVEBEvcI
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM2Mjg2MywiZXhwIjoxNjE1MzY2NDYzfQ.chyi6NHQxf8nVkunKtiOGp4NffQlzO0dwtVRGVUN780
 
 ###
 POST {{host}}/admin/admins/list
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTI3NTU2NCwiZXhwIjoxNjE1Mjc5MTY0fQ.RepIKLd0eL9xCNOHMm4f_-GW9E878AAb0A4UH-v8e8E
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM2ODU4MSwiZXhwIjoxNjE1MzcyMTgxfQ.5sTpQNNI5zkGjGy6r_PjWY9keX6-liAGkNB4acBJ2Ug
+
+###
+DELETE {{host}}/admin/delete/student/dato@gmail.com
+Content-Type: application/json
+Authorization: Berer eyJhbGciOiJIUzI1NiJ9.eyJhdXRoIjoiZ29nYUBnbWFpbC5jb20iLCJzdWIiOiJnb2dhQGdtYWlsLmNvbSIsImlhdCI6MTYxNTM2OTEwMywiZXhwIjoxNjE1MzcyNzAzfQ.T6Rt8mhIXHjHiv-1bObuUpLYEOEoz_P32EXmxLcl-TA
+
+###

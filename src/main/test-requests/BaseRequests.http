@@ -4,8 +4,8 @@ Content-Type: application/json
 {
   "name": "goga",
   "lastname": "iremashvili",
-  "username": "goga2000",
-  "email": "goga@gmail.com",
+  "username": "dato2000",
+  "email": "dato@gmail.com",
   "password": "goga1234",
   "repassword": "goga1234",
   "your_id": "12312312312"

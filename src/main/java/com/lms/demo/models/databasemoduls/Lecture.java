@@ -23,10 +23,11 @@ public class Lecture {
     private LocalDateTime localDateTime;
 
 
-    @OneToMany
+    @ManyToMany
     @JoinTable(name="lectureStudents",
             joinColumns = @JoinColumn(name="lecture_id"),
             inverseJoinColumns = @JoinColumn(name="user_id"))
+
     private List<User> user;
 
     @OneToOne
